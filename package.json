@@ -1,0 +1,13 @@
+{
+  "name": "test-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chessmasterhong/test-1.git"
+  },
+  "author": "",
+  "license": ""
+}
