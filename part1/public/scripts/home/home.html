@@ -1,6 +1,14 @@
 <div class="container">
   <div class="row">
-    <div class="col-4" ng-repeat="user in users">
+    <form class="col-12 form-inline filter-sort">
+      <div class="form-group">
+        <label class="form-label">Sort By:</label>
+        <select class="form-control" ng-options="item as item.label for item in sorts track by item.id" ng-model="selected.sort"></select>
+      </div>
+    </form>
+  </div>
+  <div class="row">
+    <div class="col-4" ng-repeat="user in users | orderBy: selected.sort.orderBy">
       <div class="grid-element priority-{{user.priority}}">
         <div class="row">
           <div class="col-12 name">
