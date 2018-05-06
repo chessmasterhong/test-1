@@ -3,6 +3,11 @@
   margin-right: 10px;
 }
 
+.filter-priority .form-check {
+  margin-top: 3px;
+  margin-left: 20px;
+}
+
 
 /* User grid */
 .grid-element {

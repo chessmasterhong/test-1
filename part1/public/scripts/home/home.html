@@ -1,4 +1,6 @@
 <div class="container">
+
+  <!-- Sort filter -->
   <div class="row">
     <form class="col-12 form-inline filter-sort">
       <div class="form-group">
@@ -7,8 +9,23 @@
       </div>
     </form>
   </div>
+
+  <!-- Priority filter -->
   <div class="row">
-    <div class="col-4" ng-repeat="user in users | orderBy: selected.sort.orderBy">
+    <form class="col-12 form-inline filter-priority">
+      <div class="form-group">
+        <label class="form-label">Category:</label>
+        <div class="form-check" ng-repeat="category in categories | orderBy">
+          <input class="form-check-input" type="radio" name="category" ng-model="selected.category" id="filter-category-{{category}}" value="{{category}}">
+          <label class="form-check-label" for="filter-category-{{category}}">{{category}}</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <!-- User grid -->
+  <div class="row">
+    <div class="col-4" ng-repeat="user in users | orderBy: selected.sort.orderBy | filter: selected.category">
       <div class="grid-element priority-{{user.priority}}">
         <div class="row">
           <div class="col-12 name">
