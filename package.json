@@ -4,7 +4,8 @@
   "description": "",
   "main": "",
   "scripts": {
-    "serve-part1": "node node_modules/http-server/bin/http-server part1/public/"
+    "serve-part1": "node node_modules/http-server/bin/http-server part1/public/",
+    "serve-part2": "node node_modules/http-server/bin/http-server part2/public/"
   },
   "repository": {
     "type": "git",
