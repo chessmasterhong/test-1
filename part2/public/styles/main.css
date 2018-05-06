@@ -57,7 +57,7 @@ body {
 .header .banner-image {
   width: 100%;
   height: 100%;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 .header .banner-title {
@@ -81,7 +81,7 @@ body {
 .section .section-header {
   padding: 60px 20px 20px;
   text-align: center;
-  border-right: 3px solid white;
+  border-right: 2px solid white;
 }
 
 .section .section-header .mobile-separator {
@@ -126,7 +126,7 @@ body {
   display: none;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 991px) {
+@media (min-width: 0px) and (max-width: 991px) {
   /* Header: top page white strip section */
   .header .header-subtitle {
     display: none
