@@ -2,7 +2,23 @@
   <div class="row">
     <div class="col-4" ng-repeat="user in users">
       <div class="grid-element priority-{{user.priority}}">
-        {{user}}
+        <div class="row">
+          <div class="col-12 name">
+            <h2>
+              {{user.name}}
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 age">
+            {{user.age}}
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 category">
+            {{user.category}}
+          </div>
+        </div>
       </div>
     </div>
   </div>
